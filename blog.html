@@ -1,0 +1,230 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blogweb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Lora:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: white;
+        }
+        h1 {
+            font-family: 'Lora', serif;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav {
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: black;
+            font-size: 1.5rem;
+            margin: 0 20px;
+            padding: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: url('https://lofi.co/thumbnail.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .banner h1 {
+            color: white;
+            font-family: 'Lora', serif, 'Montserrat', sans-serif;
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            background: white;
+            padding: 50px 0;
+        }
+        .cta-btn {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+        .cta-btn:hover {
+            box-shadow: 0 0 15px blue;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+        .category-btn {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            border-radius: 50%;
+            background: lightgray;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .category-btn:hover {
+            transform: scale(1.1);
+            background: gray;
+        }
+        .blog {
+            text-align: center;
+            padding: 50px;
+            background: white;
+        }
+        .blog-post {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-post img {
+            width: 95%;
+            transition: transform 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .blog-post:hover img {
+            transform: scale(0.9);
+        }
+        .subscribe {
+            text-align: center;
+            padding: 50px;
+        }
+        .subscribe input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1rem;
+        }
+        .subscribe button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            background: green;
+            color: white;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+        .subscribe button:hover {
+            box-shadow: 0 0 15px green;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+        }
+        .footer i {
+            font-size: 2rem;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            color: white; 
+        }
+        .footer i:hover {
+            transform: rotate(20deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+       
+    </nav>
+    
+    <section class="banner" id="home">
+        <h1>Welcome to the Blog</h1>
+        <button class="cta-btn">Dive In</button>
+    </section>
+
+    <div class="content">
+       <section class="blog" id="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-post">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" alt="Blog 1">
+        HTML is the backbone of any webpage. It’s simple yet powerful, structuring content with elements like headings, paragraphs, and images. Writing HTML feels like assembling building blocks—it’s intuitive and beginner-friendly. However, without styling, it looks plain and basic. The best part is how easy it is to learn, but handling large projects with just HTML can get messy. Still, it’s satisfying to see a blank page transform into structured content with just a few tags.
+    </div>
+    <div class="blog-post">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_aytI1gnF-V7KmPQjX0tOBJZYOkRfmC4Hwe2Qc20rC6gHZcbSKN0rfto_a9R9XNfZ_dA&usqp=CAU" alt="Blog 2">
+           .   CSS brings life to HTML by adding colors, layouts, and animations. It’s both fun and frustrating—sometimes, a simple property can fix everything, while other times, specificity issues can be a nightmare. Designing responsive layouts with Flexbox or Grid is satisfying, but debugging misaligned elements can be tricky. The creative freedom is amazing, though! With just a few lines of CSS, a dull webpage can become visually stunning, making it an essential skill for any front-end developer.
+    </div>
+    <div class="blog-post">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ekr0y50dzU1IBDEKnrOqBaRf-LJf0XG_rRkqEl_i0YSuhaRZiXbmi0tizCor_cSqWCQ&usqp=CAU" alt="Blog 3">
+        JavaScript makes websites interactive, from handling clicks to fetching data. Unlike HTML and CSS, it involves logic and problem-solving, making it exciting but challenging. Debugging errors can be frustrating, but the joy of seeing a dynamic feature work is rewarding. DOM manipulation, event handling, and API integration make JavaScript incredibly powerful. With frameworks like React and Vue, it becomes even more fun. Mastering JavaScript takes time, but once you do, it feels like you can build anything on the web!
+    </div>
+</section>
+
+    </div>
+
+    <section class="categories" id="categories">
+    <a href="technology.html" class="category-btn">💻</a>
+    <a href="photography.html" class="category-btn">🎨</a>
+    <a href="books.html" class="category-btn">📚</a>
+</section>
+
+
+    <section class="subscribe" id="subscribe">
+        <h2>Subscribe to our Blog</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button>Subscribe</button>
+    </section>
+
+    <footer class="footer">
+        <p>Follow us:</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://wallpapers.com/images/hd/room-4k-lo-fi-0jho23bd2elrjiy3.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+        }
+        .book-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .book {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+        .book img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .book h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .book p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Recommended Books</h1>
+
+    <div class="book-container">
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/613ZTDcDsiL.jpg" alt="HTML Book">
+            <h2>HTML & CSS: Design and Build Websites</h2>
+            <p><strong>Author:</strong> Jon Duckett</p>
+            <p><strong>Description:</strong> A beginner-friendly book with visually engaging content that makes learning HTML and CSS fun and easy.</p>
+        </div>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81c0Ot2ROxL.jpg" alt="CSS Book">
+            <h2>CSS: The Missing Manual</h2>
+            <p><strong>Author:</strong> David Sawyer McFarland</p>
+            <p><strong>Description:</strong> A comprehensive guide to CSS, helping you master responsive web design and advanced styling techniques.</p>
+        </div>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/91asIC1fRwL.jpg" alt="JavaScript Book">
+            <h2>JavaScript: The Good Parts</h2>
+            <p><strong>Author:</strong> Douglas Crockford</p>
+            <p><strong>Description:</strong> This book provides insights into JavaScript’s best features and how to write clean, efficient code.</p>
+        </div>
+    </div>
+
+</body>
+</html>
